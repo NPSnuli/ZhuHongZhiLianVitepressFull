@@ -44,7 +44,7 @@ docs/.vitepress/config.mts
 { text: '攻略标题', link: '/routes/your-page' }
 ```
 
-## 3. 配置右下角引流框
+## 3. 配置攻略入口与引流框
 
 打开：
 
@@ -52,17 +52,36 @@ docs/.vitepress/config.mts
 docs/.vitepress/theme/lead-sites.ts
 ```
 
-修改 `sites` 数组即可。支持站点名、描述、链接和标签。
+修改 `sites` 数组即可。支持站点名、描述、链接和标签。当前入口按钮支持随机位置和拖拽固定。
 
-## 4. 本地预览
+## 4. 更新贡献名单
+
+打开：
+
+```text
+docs/contributors.md
+```
+
+把新增攻略作者、整理者、校对者或测试者补到表格里。
+
+## 5. 本地预览
+
+推荐使用 pnpm：
+
+```bash
+pnpm install
+pnpm dev
+```
+
+也可以使用 npm：
 
 ```bash
 npm install
 npm run dev
 ```
 
-## 5. 发布
+## 6. 发布
 
 GitHub Pages：把仓库 `Settings → Pages` 设为 `GitHub Actions`，推送后自动部署。
 
-Cloudflare Pages / Netlify：构建命令填 `npm run build`，输出目录填 `docs/.vitepress/dist`。
+Cloudflare Pages / Netlify：构建命令填 `pnpm build` 或 `npm run build`，输出目录填 `docs/.vitepress/dist`。

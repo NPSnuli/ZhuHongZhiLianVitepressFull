@@ -81,3 +81,37 @@
     grid-template-columns: 1fr;
   }
 }
+
+.contributor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+  margin: 18px 0 28px;
+}
+
+.contributor-card {
+  padding: 16px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 16px;
+  background: var(--vp-c-bg-soft);
+}
+
+.contributor-role {
+  color: var(--vp-c-brand-1);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.contributor-name {
+  margin-top: 8px;
+  color: var(--vp-c-text-1);
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.contributor-desc {
+  margin-top: 8px;
+  color: var(--vp-c-text-2);
+  font-size: 13px;
+  line-height: 1.6;
+}

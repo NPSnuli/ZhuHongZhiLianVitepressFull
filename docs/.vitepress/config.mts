@@ -24,6 +24,7 @@ export default defineConfig({
     nav: [
       { text: '首页', link: '/' },
       { text: '全部文档', link: '/all-docs' },
+      { text: '贡献名单', link: '/contributors' },
       { text: '新手入门', link: '/guide/' },
       { text: '路线攻略', link: '/routes/' },
       { text: '系统资料', link: '/systems/' },
@@ -42,6 +43,10 @@ export default defineConfig({
           {
             text: "全部攻略文档索引",
             link: "/all-docs"
+          },
+          {
+            text: "贡献名单",
+            link: "/contributors"
           },
           {
             text: "如何继续添加攻略",
@@ -243,13 +248,13 @@ export default defineConfig({
     },
 
     editLink: {
-      pattern: 'https://github.com/your-name/zhu-hong-zhi-lian-wiki/edit/main/docs/:path',
+      pattern: 'https://github.com/NPSnuli/ZhuHongZhiLianVitepressFull/edit/main/docs/:path',
       text: '在 GitHub 上编辑此页'
     },
 
     footer: {
       message: '玩家整理资料，仅作攻略索引用；请以原文档与游戏内文本为准。',
-      copyright: 'Copyright © 2026-present'
+      copyright: 'Copyright © 2026-present 朱红之恋制作组，腾讯频道：点击链接加入腾讯频道【骑马与砍杀MOD社区】：https://pd.qq.com/s/eesf1o934'
     }
   }
 })
