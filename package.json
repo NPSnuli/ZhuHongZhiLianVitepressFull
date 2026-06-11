@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "vitepress dev docs --host 0.0.0.0",
     "build": "vitepress build docs",
-    "preview": "vitepress preview docs --host 0.0.0.0"
+    "preview": "vitepress preview docs --host 0.0.0.0",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
   },
   "devDependencies": {
     "vitepress": "1.6.4",
